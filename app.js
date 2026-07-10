@@ -1,10 +1,10 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 
-const authRoutes = require('./routes/auth');
-const postsRoutes = require('./routes/posts');
-const uploadRoutes = require('./routes/upload');
-const messagesRoutes = require('./routes/messages');
+const authRoutes = require('./Routes/auth');
+const postsRoutes = require('./Routes/posts');
+const uploadRoutes = require('./Routes/upload');
+const messagesRoutes = require('./Routes/messages');
 
 /**
  * Builds the Express app with just the API routes mounted. Static file
