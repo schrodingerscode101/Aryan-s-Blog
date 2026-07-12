@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login — Aryan's Blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+  <div class="masthead">
+    <div class="eyebrow">Administration</div>
+    <h1>Admin Login</h1>
+  </div>
+  <hr class="rule thick">
+
+  <div class="admin-auth-wrap">
+    <form id="login-form" class="admin-card">
+      <label for="username">Username</label>
+      <input id="username" type="text" autocomplete="username" required>
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" required>
+      <div class="form-actions">
+        <button type="submit">Log in</button>
+      </div>
+      <div class="admin-status" id="login-status"></div>
+    </form>
+  </div>
+
+  <script src="/admin/admin-auth.js"></script>
+
+</body>
+</html>
