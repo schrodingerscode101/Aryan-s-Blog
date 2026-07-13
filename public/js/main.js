@@ -110,7 +110,7 @@ function handleContactForm() {
     status.textContent = 'Encrypting your message in your browser...';
 
     try {
-      const keyRes = await fetch('/api/messages/public-key');
+      const keyRes = await fetch('/api/messages/public-key', { cache: 'no-store' });
       const keyData = await keyRes.json();
       if (!keyRes.ok || !keyData.publicKey) {
         throw new Error(keyData.error || 'The site is not yet set up to receive encrypted messages.');
