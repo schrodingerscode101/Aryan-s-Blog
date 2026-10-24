@@ -1,18 +1,19 @@
-# Aryan's Blog (Vercel edition)
+# Aryan's Blog
 
 A full-stack personal blog: a public site (landing page + posts), an admin
 panel for writing/editing posts and managing images, and a "Reach Out"
 contact form whose messages are end-to-end encrypted.
 
-This version is built to run on **Vercel**. Because Vercel's serverless
+This version is built to run on Vercel.
+ Because Vercel's serverless
 functions don't have a persistent local disk, data is stored in real cloud
 services instead of local files:
 
-- **Posts & messages:** [Upstash Redis](https://upstash.com) (added via Vercel's Storage tab)
-- **Uploaded images:** [Vercel Blob](https://vercel.com/docs/storage/vercel-blob)
-- **Admin login & the contact form's public key:** environment variables (no database needed for these)
+1)Posts & messages:[Upstash Redis](https://upstash.com) (added via Vercel's Storage tab)
+2)Uploaded images:[Vercel Blob](https://vercel.com/docs/storage/vercel-blob)
+3)Admin login & the contact form's public key:environment variables (no database needed for these)
 
-## How the pieces fit together
+ How the pieces fit together
 
 - `app.js` builds the Express app and all `/api/...` routes.
 - `server.js` is only for local testing (`npm start`) — it adds static file serving on top of `app.js`.
