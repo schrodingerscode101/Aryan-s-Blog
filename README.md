@@ -1,4 +1,4 @@
-# Aryan's Blog
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Aryan's+Blog!!!!)](https://git.io/typing-svg)
 
 A full-stack personal blog: a public site (landing page + posts), an admin
 panel for writing/editing posts and managing images, and a "Reach Out"
