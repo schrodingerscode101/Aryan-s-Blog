@@ -76,3 +76,4 @@ npm start
 ```
 
 For this to fully work locally, `.env` needs real `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` (free database at upstash.com) and a real `BLOB_READ_WRITE_TOKEN` (create a Blob store from your Vercel dashboard and copy its token) — the same cloud services your deployed site will use. This means local testing and production share the same data, which is convenient for verifying everything works before or after a deploy.
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Aryan's+Blog!!!!)](https://git.io/typing-svg)
